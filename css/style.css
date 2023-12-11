@@ -1,0 +1,352 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalnia:wght@100;200;500;600;700&display=swap');
+
+:root
+{
+	--green: green;
+	--black: #130f40;
+	--white: white;
+	--yellow: yellow;
+	--light-color: light-color;
+	--box-shadow: 0 .1rem 1rem rgba(0,0,0.1);
+	--border: 2rem solid rgba(0,0,0.1);
+	--outline: 1rem solid rgba(0,0,0.1);
+
+
+
+}
+
+
+*
+{
+	font-family: 'Kalnia', serif;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	outline: none;
+	border: none;
+	text-decoration: none;
+	transition: all .2s linear;
+}
+
+html
+{
+	font-size: 62.5%;
+	overflow-x: hidden;
+	scroll-behavior: smooth;
+	scroll-padding-top:7rem;
+}
+
+body
+{
+	background: #eee;
+}
+
+
+/*css code for banner*/
+section
+{
+	padding: 2rem 9%;
+
+}
+
+
+
+.header
+{
+	border: 0px solid;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 2rem 9%;
+	background: #fff;
+	box-shadow: var(--box-shadow);
+}
+.header .logo
+{
+	font-size: 2rem;
+	font-weight: bold;
+}
+.header .logo i
+{
+	color: var(--green);
+}
+
+.header .navbar a
+{
+	font-size: 1.7rem;
+	margin: 0 1rem;
+	color: var(--black);
+}
+
+.header .navbar a:hover
+{
+	color: var(--green);
+}
+
+.header .icons div
+{
+	border: 0px solid;
+	height: 4.5rem;
+	width: 6.5rem;
+	line-height: 5.5rem;
+	border-radius: .5rem;
+	background: #eee;
+	color: var(--black);
+	font-size: 2rem;
+	margin-right: .3rem;
+	text-align: center;
+	cursor: pointer;
+}
+.header .icons div:hover
+{
+	background: var(--green);
+	color: white;
+}
+
+#menu-btn
+{
+	display: none;
+}
+.header .navbar.active
+{
+	right: 2rem;
+	transition: .4s linear;
+}
+
+.header .icon-form
+{
+	border: 0px solid;
+	position: absolute;
+	top: 110%;
+	right: -130%;
+	width: 50rem;
+	height: 5rem;
+	background: #fff;
+	border-radius: .5rem;
+	display: flex;
+	box-shadow: var(--box-shadow);
+}
+
+
+
+
+
+
+.home
+{
+	border: 0px solid;
+	display: flex;
+	justify-content: center;
+	background: url(../images/nooo.jpg) no-repeat;
+	background-position: center;
+	background-size: cover;
+	padding-top: 17rem;
+	padding-bottom: 50rem;
+}
+
+
+.home .content
+{
+	border: 0px solid;
+	text-align: center;
+	width: 90rem;
+
+}
+.home .content h3
+{
+	color: var(--black);
+	font-size: 3rem;
+}
+.home .content h3 span
+{
+	color: var(--green);
+}
+.home .content p
+{
+	color: var(--white);
+	font-size: 1.7rem;
+	padding: 1rem 0;
+}
+.home .content p span
+{
+	color: var(--yellow);
+}
+
+
+
+/* footer css */
+.footer
+{
+	background: #fff;
+}
+.footer .box-container
+{
+	border: 0px soliod;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(26rem,1fr));
+	gap: 1.5rem;
+}
+
+
+.footer .box-container .box h3
+{
+	font-size: 2rem;
+	color: var(--black);
+	padding: 1rem 0;
+
+}
+
+.footer .box-container .box h3 i
+{
+	color: green;
+} 
+.footer .box-container .box .links
+{
+	display: block;
+	font-size: 1rem;
+	color: var(--light-color);
+	padding: 1rem 0;
+}	
+
+.footer .box-container .box .links i
+{
+	color: var(--green);
+	padding: .5rem;
+
+}
+
+.footer .box-container .box .links:hover i
+{
+	padding-right: 2rem;
+}
+
+
+
+
+
+.footer .box-container .box p
+{
+	line-height: 1.8;
+	font-size: 1rem;
+	color: var(--light-color);
+	padding: 1rem 0;
+
+}
+
+.footer .box-container .box .share a
+{
+	border: 0px solid;
+	height: 4rem;
+	width: 4rem;
+	line-height: 4rem;
+	border-radius: .5rem;
+	font-size: 2rem;
+	color: var(--black);
+	margin-left: .2rem;
+	background: #eee;
+	text-align: center;
+}
+
+.footer .box-container .box .share a:hover
+{
+	background: var(--green);
+	color: #fff;
+}
+
+.footer .credit
+{
+	text-align: center;
+	margin-top: 2rem;
+	padding: 1rem;
+	padding-top: 2.5rem;
+	font-size: 1.5rem;
+	color: var(--black);
+	border-top: var(--border);
+	border-width: .2rem;
+
+
+}
+.footer .credit span
+{
+	color: var(--green);
+}
+
+/* footer css */
+
+
+/* media queries */
+@media (max-width: 991px)
+{
+	html
+    {
+	font-size: 55%;
+    }
+
+    .header
+    {
+    	padding: 2rem;
+    }
+    section
+    { padding: 2rem;
+    }
+    .footer
+    {
+    	text-align: center;
+    }
+}
+
+
+@media (max-width: 768px)
+{
+	#menu-btn
+{
+	display: inline-block;
+}
+
+
+	.header .navbar
+	{
+		position: absolute;
+		top: 110%;
+		right: -110%;
+		width: 30rem;
+		box-shadow: var(--box-shadow);
+		border-radius: .5rem;
+		background: #fff;
+	}
+	.header .navbar a
+	{
+		font-size: 2rem;
+		margin: 2rem 2.5rem;
+		display: block;
+	}
+	.footer
+	{
+		text-align: center;
+	}
+}
+
+
+@media (max-width: 450px)
+{
+	html
+    {
+	font-size: 35%;
+    }
+    .footer
+    {
+    	text-align: center;
+    }
+}
+
+
+
+
+
+
+
+
